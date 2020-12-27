@@ -7,7 +7,7 @@
       xmlns:basic1="clr-namespace:Velacro.UIElements.Basic;assembly=Velacro"
       xmlns:lineChart="clr-namespace:Velacro.Chart.LineChart;assembly=Velacro"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="600"
+      d:DesignHeight="1080" d:DesignWidth="1425"
       Title="LoginPage">
     <Grid>
         <Grid.RowDefinitions>

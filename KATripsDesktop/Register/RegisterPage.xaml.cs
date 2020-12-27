@@ -60,6 +60,7 @@ namespace TestWPPL.Register {
         public void setRegisterStatus(string _status) {
             this.Dispatcher.Invoke(() => {
                 registerButton.setText(_status);
+                this.NavigationService.Navigate(new LoginPage());
             });
 
         }

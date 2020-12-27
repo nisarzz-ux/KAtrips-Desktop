@@ -26,6 +26,7 @@ namespace TestWPPL.Register {
                 .addParameters("password", _password)
                 .addParameters("password_confirmation", _password_confirmation)
                 .addParameters("alamat", _alamat)
+                
                 .setEndpoint("api/admin/register/")
                 .setRequestMethod(HttpMethod.Post);
             client.setOnSuccessRequest(setViewRegisterStatus);

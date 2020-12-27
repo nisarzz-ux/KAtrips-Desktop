@@ -2,6 +2,8 @@
 using System.Net.Http;
 using System.Windows.Controls;
 using TestWPPL.Register;
+using TestWPPL.Login;
+using KATripsDesktop.InputPesan;
 using Velacro.UIElements.Basic;
 using Velacro.UIElements.Button;
 using Velacro.UIElements.TextBlock;
@@ -50,6 +52,7 @@ namespace TestWPPL.Login {
             this.Dispatcher.Invoke(() =>
             {
                 loginButton.setText(_status);
+                this.NavigationService.Navigate(new InputPesan());
             });
         }
     }

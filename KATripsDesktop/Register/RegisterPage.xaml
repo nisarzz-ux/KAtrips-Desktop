@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:TestWPPL"
       xmlns:basic="clr-namespace:Velacro.UIElements.Basic;assembly=Velacro"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="600"
+      d:DesignHeight="1080" d:DesignWidth="1425"
       Title="RegisterPage">
     <Grid>
         <Grid.RowDefinitions>
