@@ -8,6 +8,8 @@ using Velacro.UIElements.Basic;
 using Velacro.UIElements.Button;
 using Velacro.UIElements.TextBlock;
 using Velacro.UIElements.TextBox;
+using KATripsDesktop.PesanTiket;
+
 
 namespace TestWPPL.Login {
 
@@ -52,7 +54,7 @@ namespace TestWPPL.Login {
             this.Dispatcher.Invoke(() =>
             {
                 loginButton.setText(_status);
-                this.NavigationService.Navigate(new InputPesan());
+                this.NavigationService.Navigate(new PesanTiket());
             });
         }
     }

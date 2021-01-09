@@ -8,6 +8,7 @@ using Velacro.UIElements.TextBox;
 using TestWPPL.Login;
 using TestWPPL.Dashboard;
 
+
 namespace KATripsDesktop.PesanTiket
 {
     /// <summary>
@@ -77,6 +78,26 @@ namespace KATripsDesktop.PesanTiket
                 TambahButton.setText(_status);
                 this.NavigationService.Navigate(new Dashboard());
             });
+
+        }
+
+        private void btn_kembali_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_tambah_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
+
+        private void stasiunawal_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void stasiuntiba_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
         }
     }
