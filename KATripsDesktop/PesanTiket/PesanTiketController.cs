@@ -21,7 +21,7 @@ namespace KATripsDesktop.PesanTiket {
             string _jumlah_kursi,
             string _harga_tiket)
         {
-            var client = new ApiClient("http://127.0.0.1:8000/");
+            var client = new ApiClient("http://api.katrips.me/");
             var request = new ApiRequestBuilder();
 
             string token = "";
@@ -35,7 +35,6 @@ namespace KATripsDesktop.PesanTiket {
                 .addParameters("kode_gerbang", _kode_gerbang)
                 .addParameters("jumlah_kursi", _jumlah_kursi)
                 .addParameters("harga_tiket", _harga_tiket)
-               
                 .setEndpoint("api/admin/tiket/create/")
                 .setRequestMethod(HttpMethod.Post);
             client.setOnSuccessRequest(setViewPesanTiketStatus);

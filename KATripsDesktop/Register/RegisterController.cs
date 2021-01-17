@@ -15,7 +15,7 @@ namespace TestWPPL.Register {
             string _password,
             string _password_confirmation,
             string _alamat) {
-            var client = new ApiClient("http://127.0.0.1:8000/");
+            var client = new ApiClient("http://api.katrips.me/");
             var request = new ApiRequestBuilder();
 
             string token = "";

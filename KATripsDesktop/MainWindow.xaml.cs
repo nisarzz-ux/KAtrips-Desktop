@@ -4,6 +4,7 @@ using TestWPPL.Register;
 using Velacro.DataStructures;
 using Velacro.UIElements.Basic;
 using KATripsDesktop.InputPesan;
+using KATripsDesktop.About;
 
 namespace TestWPPL {
     public partial class MainWindow : MyWindow {
@@ -11,12 +12,14 @@ namespace TestWPPL {
         private MyPage registerPage;
         private MyPage dashboardPage;
         private MyPage InputTiketPage;
+        private MyPage AboutPage;
         public MainWindow() {
             InitializeComponent();
             registerPage = new RegisterPage();
             loginPage = new LoginPage();
             dashboardPage = new Dashboard.Dashboard();
             InputTiketPage = new InputPesan();
+            AboutPage = new AboutUs();
         }
 
         private void dashboardButton_btn_Click(object sender, RoutedEventArgs e){
@@ -43,6 +46,10 @@ namespace TestWPPL {
             mainFrame.Navigate(loginPage);
         }
 
+        private void aboutusButton_btn_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(AboutPage);
+        }
 
 
     }

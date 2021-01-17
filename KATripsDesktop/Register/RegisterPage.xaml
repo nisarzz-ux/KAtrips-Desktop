@@ -8,18 +8,20 @@
       mc:Ignorable="d" 
       d:DesignHeight="1080" d:DesignWidth="1425"
       Title="RegisterPage">
-    <Grid>
+    <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FF2F6FF8" HorizontalAlignment="Left" Height="63" Margin="10,29,0,-54" RadiusY="14" RadiusX="14" StrokeThickness="8" VerticalAlignment="Top" Width="226"/>
+        <Label Content="REGISTER" Foreground="White" HorizontalAlignment="Left" Margin="40,35,0,-52" VerticalAlignment="Top" Height="57" Width="174" FontSize="30" FontFamily="Montserrat" FontWeight="Bold"/>
         <TextBox Name="name_txt" Grid.Row="0" HorizontalAlignment="Center" Grid.Column="0" Height="23" TextWrapping="Wrap" Text="Name" Width="176" Margin="212,96,212,-95"/>
         <TextBox Name="email_txt" Grid.Row="0" Grid.Column="0" Height="23" TextWrapping="Wrap" Text="Email" Width="176" Margin="212,124,212,-123"/>
         <TextBox Name="password_txt"  Grid.Row="0" Grid.Column="0" Height="23" TextWrapping="Wrap" Text="Password" Width="176" Margin="212,152,212,-151"/>
         <TextBox Name="passwordc_txt" Grid.Row="0" Grid.Column="0" Height="23" TextWrapping="Wrap" Text="Password Confirmation" Width="176" Margin="212,180,212,-179"/>
         <TextBox Name="alamat_txt" Grid.Row="0" Grid.Column="0" Height="23" TextWrapping="Wrap" Text="Alamat" Width="176" Margin="212,210,212,-205"/>
-        <Button Name="register_btn"  Grid.Row="0" Grid.Column="0" Content="Register" Width="176" Margin="212,246,212,-245.8"/>
+        <Button Name="register_btn" Foreground="White" Background="#FF2F6FF8" Grid.Row="0" Grid.Column="0" Content="Register" Width="176" Margin="212,246,212,-245.8" FontSize="15" FontWeight="Bold"/>
     </Grid>
 </basic:MyPage>

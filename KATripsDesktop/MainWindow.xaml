@@ -23,25 +23,28 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="Halaman Admin" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Montserrat" FontSize="22" FontWeight="Bold" Foreground="White"/>
+            <TextBlock Text="Halaman Admin" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Montserrat" FontSize="22" FontWeight="Bold" Foreground="White" Margin="20,48,0,10" Width="200"/>
 
-            <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden" Margin="220,0,-1483,0" Grid.RowSpan="2"/>
+            <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden" Margin="225,-5,-1233,-9" Grid.RowSpan="2"/>
 
             <StackPanel Grid.Row="1">
 
-                <Button Background="#FF2F6FF8" x:Name="loginButton_btn" Margin="0,40,0,0" Content="LOGIN" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Montserrat" FontSize="22" FontWeight="ExtraLight" Foreground="White" Click="loginButton_btn_Click"/>
+                <Button Background="#FF2F6FF8" x:Name="loginButton_btn" Margin="0,40,0,0" Content="LOGIN" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Montserrat" FontSize="22" Foreground="White" Click="loginButton_btn_Click"/>
 
-                <Button Background="#FF2F6FF8" x:Name="register_btn" Margin="0,40,0,0" Content="REGISTER" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Montserrat" FontSize="22" FontWeight="ExtraLight" Foreground="White" Click="registerButton_btn_Click"/>
+                <Button Background="#FF2F6FF8" x:Name="register_btn" Margin="0,40,0,0" Content="REGISTER" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Montserrat" FontSize="22" Foreground="White" Click="registerButton_btn_Click"/>
 
-                <Button Background="#FF2F6FF8" x:Name="logout" Margin="0,100,0,0" Content="LOGOUT" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Montserrat" FontSize="22" FontWeight="ExtraLight" Foreground="White" Click="logoutButton_btn_Click"/>
+                <Button Background="#FF2F6FF8" x:Name="aboutus_btn" Margin="0,40,0,0" Content="ABOUT US" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Montserrat" FontSize="22" Foreground="White" Click="aboutusButton_btn_Click"/>
+
+                <Button Background="#FF2F6FF8" x:Name="logout" Margin="0,100,0,0" Content="LOGOUT" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Montserrat" FontSize="22" Foreground="White" Click="logoutButton_btn_Click"/>
 
             </StackPanel>
         </Grid>
 
         <Grid Grid.ColumnSpan="2" Background="#FF2F6FF8" >
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <TextBlock Text="KATrips Admin" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Montserrat" FontSize="22" FontWeight="ExtraLight" Foreground="White" Margin="0,17,0,16" Width="167"/>
+                <TextBlock Text="KATrips Admin" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Montserrat" FontSize="30" FontWeight="Bold" Foreground="White" Margin="0,12,0,10" Width="262" Height="38"/>
             </StackPanel>
         </Grid>
+        <Image Margin="26,10,118,10" Source="logo-fix (1).png" Stretch="Fill"/>
     </Grid>
 </basic:MyWindow>

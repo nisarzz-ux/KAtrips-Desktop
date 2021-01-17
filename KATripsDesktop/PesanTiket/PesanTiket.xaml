@@ -11,7 +11,7 @@
         <Grid Grid.Column="1" Grid.Row="1" Background="White">
             <ScrollViewer>
                 <Grid>
-                    <Rectangle Margin="-194,59,234,665" Fill="WhiteSmoke" RadiusY="14" RadiusX="14" StrokeThickness="8" >
+                    <Rectangle Margin="-194,59,234,588" Fill="WhiteSmoke" RadiusY="14" RadiusX="14" StrokeThickness="8" >
                         <Rectangle.Effect>
                             <DropShadowEffect ShadowDepth="3" Color="#FFDCD5D5"/>
                         </Rectangle.Effect>
@@ -26,10 +26,10 @@
                         </ComboBox.Background>
                     </ComboBox>
 
-                    <TextBox x:Name="waktuberangkat" HorizontalAlignment="Left" Height="23" Margin="289,115,0,0" TextWrapping="Wrap" Text="Waktu Berangkat" TextAlignment="Center" VerticalAlignment="Top" Width="160"/>
-                    <TextBox x:Name="waktutiba" HorizontalAlignment="Left" Height="23" Margin="454,114,0,0" TextWrapping="Wrap" Text="Waktu Tiba" TextAlignment="Center" VerticalAlignment="Top" Width="160"/>
+                    <TextBox x:Name="waktuberangkat" HorizontalAlignment="Left" Height="23" Margin="289,115,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="160"/>
+                    <TextBox x:Name="waktutiba" HorizontalAlignment="Left" Height="23" Margin="569,115,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="160" RenderTransformOrigin="1.138,0.522"/>
 
-                    <ComboBox x:Name="stasiunawal" HorizontalAlignment="Left" Margin="25,179,0,0" VerticalAlignment="Top" Width="424" Height="26">
+                    <ComboBox x:Name="stasiunawal" HorizontalAlignment="Left" Margin="25,214,0,0" VerticalAlignment="Top" Width="424" Height="26">
                         <ComboBox.Background>
                             <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                                 <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -38,7 +38,7 @@
                         </ComboBox.Background>
                     </ComboBox>
 
-                    <ComboBox x:Name="stasiuntiba" HorizontalAlignment="Left" Margin="484,179,0,0" VerticalAlignment="Top" Width="422" Height="26">
+                    <ComboBox x:Name="stasiuntiba" HorizontalAlignment="Left" Margin="532,214,0,0" VerticalAlignment="Top" Width="422" Height="26">
                         <ComboBox.Background>
                             <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                                 <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -47,18 +47,26 @@
                         </ComboBox.Background>
                     </ComboBox>
 
-                    <Rectangle HorizontalAlignment="Left" Margin="103,283,0,665" Fill="White" RadiusY="14" RadiusX="14" StrokeThickness="8" Width="987">
+                    <Rectangle HorizontalAlignment="Left" Margin="25,283,0,665" Fill="White" RadiusY="14" RadiusX="14" StrokeThickness="8" Width="1095">
                         <Rectangle.Effect>
                             <DropShadowEffect ShadowDepth="3" Color="#FFDCD5D5"/>
                         </Rectangle.Effect>
                     </Rectangle>
 
-                    <TextBox x:Name="kodegerbang" HorizontalAlignment="Left" Height="23" Margin="103,295,0,0" TextWrapping="Wrap" Text="Kode Gerbang" TextAlignment="Center" VerticalAlignment="Top" Width="308"/>
-                    <TextBox x:Name="jumlahkursi" HorizontalAlignment="Left" Height="23" Margin="439,295,0,0" TextWrapping="Wrap" Text="Jumlah Kursi" TextAlignment="Center" VerticalAlignment="Top" Width="290"/>
-                    <TextBox x:Name="hargatiket" HorizontalAlignment="Left" Height="23" Margin="746,295,0,0" TextWrapping="Wrap" Text="Harga Tiket" TextAlignment="Center" VerticalAlignment="Top" Width="344"/>
+                    <TextBox x:Name="kodegerbang" HorizontalAlignment="Left" Height="22" Margin="56,336,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="308"/>
+                    <TextBox x:Name="jumlahkursi" HorizontalAlignment="Left" Height="23" Margin="409,336,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="290"/>
+                    <TextBox x:Name="hargatiket" HorizontalAlignment="Left" Height="23" Margin="746,335,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="344"/>
 
-                    <Button x:Name="btn_kembali" Background="#FF2F6FF8" Content="KEMBALI" HorizontalAlignment="Left" Margin="692,356,0,0" VerticalAlignment="Top" Width="120" FontFamily="Montserrat" FontSize="22" FontWeight="ExtraLight" Foreground="White" Click="btn_kembali_Click" RenderTransformOrigin="-0.262,-3.339"/>
-                    <Button x:Name="btn_tambah" Background="#FFE87300" Content="TAMBAH" HorizontalAlignment="Left" Margin="415,356,0,0" VerticalAlignment="Top" Width="120" FontFamily="Montserrat" FontSize="22" FontWeight="ExtraLight" Foreground="White" Click="btn_tambah_Click"/>
+                    <Button x:Name="btn_kembali" Background="#FF2F6FF8" Content="KEMBALI" HorizontalAlignment="Left" Margin="609,436,0,0" VerticalAlignment="Top" Width="120" FontFamily="Montserrat" FontSize="22" FontWeight="ExtraLight" Foreground="White" Click="btn_kembali_Click" RenderTransformOrigin="-0.262,-3.339"/>
+                    <Button x:Name="btn_tambah" Background="#FFE87300" Content="TAMBAH" HorizontalAlignment="Left" Margin="291,436,0,0" VerticalAlignment="Top" Width="120" FontFamily="Montserrat" FontSize="22" FontWeight="ExtraLight" Foreground="White" Click="btn_tambah_Click"/>
+                    <Label Content="Kelas Kereta" HorizontalAlignment="Left" Margin="25,84,0,0" VerticalAlignment="Top" Width="111" FontSize="14"/>
+                    <Label Content="Waktu Berangkat" HorizontalAlignment="Left" Margin="289,84,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <Label Content="Waktu Tiba" HorizontalAlignment="Left" Margin="569,84,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <Label Content="Stasiun Awal" HorizontalAlignment="Left" Margin="27,183,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <Label Content="Stasiun Tiba" HorizontalAlignment="Left" Margin="532,183,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <Label Content="Kode Gerbang" HorizontalAlignment="Left" Margin="56,305,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.587,1.462" FontSize="14"/>
+                    <Label Content="Jumlah Kursi" HorizontalAlignment="Left" Margin="409,305,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <Label Content="Harga Tiket" HorizontalAlignment="Left" Margin="746,304,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,1.635" FontSize="14"/>
 
                 </Grid>
             </ScrollViewer>

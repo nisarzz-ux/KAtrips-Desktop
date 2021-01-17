@@ -9,15 +9,17 @@
       mc:Ignorable="d" 
       d:DesignHeight="1080" d:DesignWidth="1425"
       Title="LoginPage">
-    <Grid>
+    <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Button Name="loginButton_btn"  Grid.Column="0" VerticalAlignment="Bottom" Content="Login" Width="238" Margin="181,0,181,77"   />
+        <Button Name="loginButton_btn" Foreground="White" Background="#FF2F6FF8" Grid.Column="0" VerticalAlignment="Bottom" Content="Login" Width="238" Margin="181,0,181,77" FontWeight="Bold" FontSize="15"   />
         <TextBox Name="email_txt"  Grid.Column="0" Grid.Row ="0" VerticalAlignment="Center" Height="23" TextWrapping="Wrap" Text="Email"  Width="238" />
         <TextBox Name="password_txt"  Grid.Column="0"  Grid.Row ="0" VerticalAlignment="Center" Height="22" TextWrapping="Wrap" Text="Password"  Width="238" Margin="181,172,181,116"/>
+        <Rectangle Fill="#FF2F6FF8" HorizontalAlignment="Left" Height="63" Margin="10,29,0,0" RadiusY="14" RadiusX="14" StrokeThickness="8" VerticalAlignment="Top" Width="180"/>
+        <Label Content="LOGIN" HorizontalAlignment="Left" Margin="42,35,0,-53" VerticalAlignment="Top" Height="57" Width="214" FontSize="30" FontFamily="Montserrat" FontWeight="Bold" Grid.ColumnSpan="2" Foreground="White"/>
     </Grid>
 </basic1:MyPage>
